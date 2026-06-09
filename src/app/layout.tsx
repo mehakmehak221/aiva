@@ -13,8 +13,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AIVA — Onboarding",
-  description: "AIVA Onboarding screen",
+  title: "CLIVA — Onboarding",
+  description: "CLIVA Onboarding screen",
 };
 
 export default function RootLayout({
