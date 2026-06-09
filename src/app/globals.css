@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aiva-bg: #070710;
+  --color-aiva-s1: #0d0d1a;
+  --color-aiva-s2: #12121f;
+  --color-aiva-s3: #18182a;
+  --color-aiva-border: rgba(255, 255, 255, 0.06);
+  --color-aiva-border2: rgba(255, 255, 255, 0.11);
+  --color-aiva-text: #e8e8f4;
+  --color-aiva-muted: rgba(232, 232, 244, 0.42);
+  --color-aiva-muted2: rgba(232, 232, 244, 0.18);
+  --color-aiva-accent: #6c4ff6;
+  --color-aiva-accent2: #9d7ffa;
+  --color-aiva-accent3: #c4b0ff;
+  --color-aiva-glow: rgba(108, 79, 246, 0.20);
+  --color-aiva-green: #10d9a0;
+  --color-aiva-green2: #6ee7c7;
+  --color-aiva-green-bg: rgba(16, 217, 160, 0.09);
+  --color-aiva-red: #f05252;
+  --color-aiva-red-bg: rgba(240, 82, 82, 0.09);
+  --color-aiva-amber: #f5a623;
+  --color-aiva-amber-bg: rgba(245, 166, 35, 0.09);
+  --color-aiva-blue: #38b6ff;
+  --color-aiva-blue-bg: rgba(56, 182, 255, 0.09);
+  --color-aiva-pink: #f472b6;
+
+  --font-syne: "Syne", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-cabinet: "Cabinet Grotesk", sans-serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
+}
+
+body {
+  font-family: var(--font-cabinet);
+  background-color: var(--color-aiva-bg);
+  color: var(--color-aiva-text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 92, 252, 0.08), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
